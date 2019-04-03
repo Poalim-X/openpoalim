@@ -4,7 +4,7 @@ const fs = require ('fs');
 
 const subscriptionKey = process.env.SUBSCRIPTION_KEY;
 const clientId = process.env.CLIENT_ID;
-const client_secret = process.env.CLIENT_SECRET;
+const clientSecret = process.env.CLIENT_SECRET;
 
 async function auth() {
     try {
