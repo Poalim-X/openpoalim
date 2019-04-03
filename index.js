@@ -3,7 +3,7 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 
-const poalim = require('./poalim');
+const poalim = require('./poalimapi');
 
 const subscriptionKey = process.env.SUBSCRIPTION_KEY;
 const clientId = process.env.CLIENT_ID;
