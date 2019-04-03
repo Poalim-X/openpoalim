@@ -18,7 +18,7 @@ app.get('/getBranchInfo', async function(req, res) {
     console.log('bank: ' + req.query.bank_id + ', branch: ' + req.query.branch_id);
 
     var access_token = await poalim.auth();
-    res.status(200).send(await poalim.getBranchInfo(access_token, req.query.branch_id));
+    res.status(200).send(await poalim.getBranchInfo(access_token, req.query.bank_id, req.query.branch_id));
 });
 
 app.listen(app.get('port'), function() {

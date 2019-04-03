@@ -34,10 +34,10 @@ async function auth() {
     }
 }
 
-async function getBranchInfo(access_token, branch_id) {
+async function getBranchInfo(access_token, bank_id, branch_id) {
     try {
         var response = await request({
-            url: 'https://api.pre.bankhapoalim.co.il/public/obs/open-data/v1/banks/12/branches/' + branch_id,
+            url: 'https://api.pre.bankhapoalim.co.il/public/obs/open-data/v1/banks/' + bank_id + '/branches/' + branch_id,
             method: 'GET',
             key: fs.readFileSync('zappreopenapi.pem'),
             cert: fs.readFileSync('zappreopenapi.crt'),
