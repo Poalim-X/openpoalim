@@ -52,7 +52,7 @@ async function getBranchInfo(access_token, bank_id, branch_id) {
         return response;
 
     } catch (error) {
-        console.error("failed calling auth API", error);
+        console.error("failed calling branch info API", error);
     }
 }
 
