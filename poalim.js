@@ -49,7 +49,7 @@ async function getBranchInfo(access_token, bank_id, branch_id) {
         });
 
         console.log (response);
-        return response;
+        return JSON.parse(response);
 
     } catch (error) {
         console.error("failed calling branch info API", error);
