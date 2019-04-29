@@ -19,10 +19,10 @@ async function auth() {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
             form: {
-                'Client_id': clientId,
-                'Client_secret': clientSecret,
+                'client_id': clientId,
+                'client_secret': clientSecret,
                 'response_type': 'token',
-                'Scope': 'public'
+                'scope': 'public'
             }
         });
 
