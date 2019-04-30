@@ -2,6 +2,10 @@
 <html>
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
+<link rel="stylesheet" href="https://unpkg.com/material-components-web/dist/material-components-web.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<link rel="stylesheet" href="branchinfo.css">
+<script src="https://unpkg.com/material-components-web/dist/material-components-web.min.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137778155-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -13,16 +17,39 @@
 </head>
 <body>
 
-<h2>HTML Forms</h2>
+<h2>open Banking API</h2>
 
 <form action="/getBranchInfo">
-  Bank ID:<br>
-  <input type="text" name="bank_id" value="12">
-  <br>
-  Branch ID:<br>
-  <input type="text" name="branch_id" value="90">
+  <!-- Bank ID:<br> -->
+      <!-- value="12" -->
+  <!-- <div class="mdc-text-field mdc-text-field--outlined">
+      <input type="text" name="bank_id" class="mdc-text-field__input">
+      <div class="mdc-notched-outline mdc-notched-outline--no-label">
+        <div class="mdc-notched-outline__leading"></div>
+        <div class="mdc-notched-outline__notch">
+          <label class="mdc-floating-label"></label>
+        </div>
+        <div class="mdc-notched-outline__trailing"></div>
+      </div>
+    </div> -->
+<!-- <br><br> -->
+  <!-- Branch ID:<br> -->
+    <!-- value="90" -->
+  <!-- <div class="mdc-text-field mdc-text-field--outlined">
+      <input type="text" name="branch_id" class="mdc-text-field__input">
+      <div class="mdc-notched-outline mdc-notched-outline--no-label">
+        <div class="mdc-notched-outline__leading"></div>
+        <div class="mdc-notched-outline__notch">
+          <label class="mdc-floating-label"></label>
+        </div>
+        <div class="mdc-notched-outline__trailing"></div>
+      </div>
+    </div> -->
   <br><br>
-  <input type="submit" value="Submit">
+  <input type="text" name="bank_id" placeholder="Bank ID" type="text"><br>
+  <input type="text" name="branch_id" placeholder="Branch ID" type="text"><br><br>
+  <hr>
+  <button value="Submit" type="submit" class="mdc-button mdc-button--raised">send</button>
 </form> 
 
 <p>If you click the "Submit" button, the form-data will be sent to server.</p>
