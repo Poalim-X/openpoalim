@@ -1,0 +1,63 @@
+body {
+    background-image: url(../silver-light-blue.jpg);
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
+}
+
+form {
+    text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+h2, p {
+    text-align: center;
+}
+
+hr {
+    color:  #afc8ee;
+    border-color:  #afc8ee;
+    background-color:  #afc8ee;
+}
+
+.mdc-button--raised:not(:disabled) {
+    border-color: white;
+    border-color: white;
+    background-color: #444fee;
+}
+.mdc-button:not(:disabled) {
+    color: white;
+    color: white;
+}
+
+input,
+textarea {
+    cursor: pointer;
+	display: block;
+	width: 100%;
+    border: 0;
+    border-bottom: 0;
+	padding: 10px 5px;
+    background: white no-repeat;
+	/*
+	* IMPORTANT PART HERE
+	*/
+	
+  /* 2 imgs : 1px gray line (normal state) AND 2px green line (focus state) */
+	background-image: linear-gradient(to bottom, #0010ee, #0010ee), linear-gradient(to bottom, rgb(243, 242, 242), rgb(243, 242, 242));
+	/* sizes for the 2 images (default state) */
+	background-size: 0 2px, 100% 1px;
+	/* positions for the 2 images. Change both "50%" to "0%" or "100%" and tri again */
+	background-position: 50% 100%, 50% 100%;
+
+	/* animation solely on background-size */
+  transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+
+}
+
+input:focus,
+textarea:focus{
+  /* sizes for the 2 images (focus state) */
+	background-size: 100% 2px, 100% 1px;
+	outline: none;
+}
